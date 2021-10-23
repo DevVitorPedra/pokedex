@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'vba';
+    src: url('../../assets/fonts/PokemonGb-RAeo.ttf');
+}
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.intro{ 
+        position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    
+}
+.intro-image{
+height: 100%;
+width: 100%;
+    background-image: url('../../assets/images/start-screen.jpg');
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.press-start{
+    font-family: vba;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    background-color: green;
+    height: 20vh;
+    width: 30vw;
+    font-size: 3vw;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  .will-hide{
+        -webkit-animation: slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+        animation: slide-out-fwd-center 0.7s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+  }
+
+@-webkit-keyframes slide-out-fwd-center {
+        0% {
+          -webkit-transform: translateZ(1);
+                  transform: translateZ(1);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateZ(600px);
+                  transform: translateZ(600px);
+          opacity: 0;
+        }
+      }
+      @keyframes slide-out-fwd-center {
+        0% {
+          -webkit-transform: translateZ(1);
+                  transform: translateZ(1);
+          opacity: 1;
+        }
+        100% {
+          -webkit-transform: translateZ(600px);
+                  transform: translateZ(600px);
+          opacity: 0;
+        }
+      }
+      

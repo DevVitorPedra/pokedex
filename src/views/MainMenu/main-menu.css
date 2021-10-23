@@ -1,0 +1,23 @@
+.main-menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.display{
+    height:80vh;
+    width: 70vw;
+    background-color:cyan;
+}
+.routes{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+.btn{
+    width: 30vw;
+    height: 10vh;
+}
