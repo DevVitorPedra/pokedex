@@ -5,3 +5,6 @@ Criar os componentes das telas "views"
 modificar a parte visual dos botões
 <i class="bi bi-heart"></i> coração vazio
 <i class="bi bi-heart-fill"></i>  coração preenchido
+
+criar a pagina do single pokemon
+

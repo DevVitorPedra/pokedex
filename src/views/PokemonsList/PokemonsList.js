@@ -3,6 +3,9 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function PokemonsList(props) {
+    const description = document.querySelector('.description-text')
+    description.innerHTML= `A List with all the pokemons in the world.
+    <br/>Choose one to see the stats`
     useEffect(() => {
         getData()
     }, [])
@@ -15,11 +18,7 @@ export default function PokemonsList(props) {
         const list = await data.json()
         return setPokemons(list.results)
     }
-    if (!pokemons) {
-        return (
-            <p>Carregando Lista de pokemons...</p>
-        )
-    }
+   
     return (
         <div className="pokedex">
             {pokemons.map((element, idx) => {
