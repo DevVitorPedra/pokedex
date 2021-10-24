@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import '../src/views/Intro/intro.css'
-import '../src/views/MainMenu/main-menu.css'
+import './app.css'
+import '../src/views/PokemonsList/PokemonsList.css'
 
 
 ReactDOM.render(

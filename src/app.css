@@ -1,12 +1,79 @@
 @font-face {
     font-family: 'vba';
-    src: url('../../assets/fonts/PokemonGb-RAeo.ttf');
+    src: url('./assets/fonts/PokemonGb-RAeo.ttf');
 }
+
 *{ 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: vba;
 }
+body{
+  background-color:darkslategrey;
+}
+.main-menu{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.display{
+        background-color: #75CA88;
+    height:80vh;
+    width: 61vw;
+    margin: .5%;
+    border-radius: 10px;
+    padding: 3.5vh;
+    border: 5px solid gray;
+    overflow: scroll;
+}
+.routes{
+   
+    background-color: #FFCBA5;
+    border-radius: 10px;
+    border: 5px solid #736163;
+    height: 79vh;
+    width: 38vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7vh;
+    padding-top: 3.5vh;
+    box-shadow: 0px 0px 10px 5px green;
+}
+.external-routes{
+    margin: .5%;
+    padding-bottom:-10px;
+    border: 6px solid #6BB231;
+    border-radius: 10px;
+    height: 80vh;
+}
+.description-text {
+        border-radius: 10px;
+        border: 4px solid gray;
+        height: 18vh;
+        background-color: white;
+}
+.routes-selector{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 7vh;
+        color: darkslategrey;
+}
+.btn{
+    background-color: #FFE3A5;
+    text-align: start;
+    color: darkslategrey;
+    font-weight: bold;
+    font-size: 2vw;
+    width: 28vw;
+    height: 10vh;
+    border: none;
+    padding-left: 10px;
+}
+
 .intro{ 
         position: absolute;
     width: 100vw;
@@ -17,7 +84,7 @@
 .intro-image{
 height: 100%;
 width: 100%;
-    background-image: url('../../assets/images/start-screen.jpg');
+    background-image: url('../src/assets/images/start-screen.jpg');
     background-position:center ;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -27,7 +94,7 @@ width: 100%;
     align-items: flex-end;
 }
 .press-start{
-    font-family: vba;
+   
 
     display: flex;
     justify-content: center;

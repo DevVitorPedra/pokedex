@@ -1,0 +1,7 @@
+npx create-react-app
+npm install react-router-dom
+deletar itens desnecessários
+Criar os componentes das telas "views"
+modificar a parte visual dos botões
+<i class="bi bi-heart"></i> coração vazio
+<i class="bi bi-heart-fill"></i>  coração preenchido

@@ -1,6 +1,5 @@
 import { Route, BrowserRouter as Router, Switch, Link } from 'react-router-dom';
 import React from 'react'
-import './views/MainMenu/main-menu.css'
 import Favorites from './views/Favorites/Favorites';
 import Type from './views/Type/Type';
 import PokemonsList from './views/PokemonsList/PokemonsList';
@@ -27,20 +26,25 @@ function App() {
           </Switch>
 
         </div>
+        <div className="external-routes">
         <div className="routes">
-          <div>
-            <Link to={'/pokemons-list'}><button className="btn">Pokemons List</button></Link>
+          <div className="routes-selector">
+         <span className="pokemons-selector"><i className="bi bi-caret-right-fill"></i></span> <Link to={'/pokemons-list'}><button className="btn"><i className="bi bi-list-ol"></i> Pokemons</button></Link>
           </div>
-          <div>
-            <Link to={'/favorites'}><button className="btn">Favorites</button></Link>
+          <div className="routes-selector">
+          <span className="favorites-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/favorites'}><button className="btn"><i className="bi bi-heart"></i> Favorites</button></Link>
           </div>
-          <div>
-            <Link to={'/type'}> <button className="btn">Types</button></Link>
+          <div className="routes-selector">
+          <span className="types-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/type'}> <button className="btn"><i className="bi bi-x-diamond"></i> Types</button></Link>
+          </div>
           </div>
         </div>
-
+         
 
       </div>
+      <div className="description-text">
+            
+            </div>
     </Router>
 
 
