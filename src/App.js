@@ -3,6 +3,7 @@ import React from 'react'
 import Favorites from './views/Favorites/Favorites';
 import Type from './views/Type/Type';
 import PokemonsList from './views/PokemonsList/PokemonsList';
+import Pokemon from './views/Pokemon/Pokemon';
 function App() {
   return (
     <Router>
@@ -20,9 +21,10 @@ function App() {
       <div className="main-menu">
         <div className="display">
           <Switch>
-            <Route path={'/favorites'} component={Favorites} />
-            <Route path={'/pokemons-list'} component={PokemonsList} />
-            <Route path={'/type'} component={Type} />
+            <Route excat path={'/pokemon/:id'} component={Pokemon}/>
+            <Route exact path={'/favorites'} component={Favorites} />
+            <Route exact path={'/pokemons-list'} component={PokemonsList} />
+            <Route exact path={'/type'} component={Type} />
           </Switch>
 
         </div>

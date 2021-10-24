@@ -28,6 +28,9 @@ body{
     border: 5px solid gray;
     overflow: scroll;
 }
+.display::-webkit-scrollbar {
+        display: none;
+    }
 .routes{
    
     background-color: #FFCBA5;
@@ -69,7 +72,7 @@ body{
     color: darkslategrey;
     font-weight: bold;
     font-size: 2vw;
-    width: 28vw;
+    width: 27vw;
     height: 10vh;
     border: none;
     padding-left: 10px;

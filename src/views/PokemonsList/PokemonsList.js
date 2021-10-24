@@ -3,10 +3,11 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function PokemonsList(props) {
-    const description = document.querySelector('.description-text')
+    
+    useEffect(() => {
+        const description = document.querySelector('.description-text')
     description.innerHTML= `A List with all the pokemons in the world.
     <br/>Choose one to see the stats`
-    useEffect(() => {
         getData()
     }, [])
     const [pokemons, setPokemons] = useState([])
