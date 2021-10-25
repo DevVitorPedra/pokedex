@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 
 export default function Type() {
     useEffect(() => {
@@ -9,8 +11,11 @@ export default function Type() {
         }
     }, [])
     return (
-        <div>
-            <p>types</p>
+        <div className="types">
+            <select>
+                <option>normal</option>
+            </select>
+            <div className="types-screen"></div>
         </div>
     )
 }
