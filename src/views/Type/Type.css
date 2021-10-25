@@ -2,6 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
+.by-types::-webkit-scrollbar {
+    display: none;
+}
 .links{
     display: flex;
     flex-direction: column;
@@ -20,4 +23,7 @@
     gap: 25px;
     flex-wrap: wrap;
     overflow-y: scroll;
+}
+.types-screen::-webkit-scrollbar {
+    display: none;
 }
