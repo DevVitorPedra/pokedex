@@ -40,18 +40,21 @@ export default function PokemonsList({ match }) {
         let savedPokemon=  favorites.findIndex((element)=>(element.name===pokemon.name))
         console.log(pokemon)
         console.log(favorites)
+        const pokeImg =  document.querySelector('.single-pokemon')
         
       if (savedPokemon>=0){
           console.log(savedPokemon)
             favorites.splice(savedPokemon,1)
             localStorage.setItem('favorites',JSON.stringify(favorites))
             btnFav.innerHTML = heart
-
+            pokeImg.classList.remove('shake')
       }else {
           console.log(savedPokemon)
           favorites.push(pokemon)
           localStorage.setItem('favorites',JSON.stringify(favorites))
           btnFav.innerHTML = heartFill
+         
+          pokeImg.classList.add('shake')
           
       }
     

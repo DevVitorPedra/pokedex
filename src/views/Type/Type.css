@@ -10,10 +10,12 @@
 }
 .btn-types{
     height: 20px;
+    width: 90px;
+    font-size: 10px;
 }
 .types-screen{
     height: 90vh;
-    padding:20px;
+    margin-left: 20px ;
     display: flex;
     gap: 25px;
     flex-wrap: wrap;

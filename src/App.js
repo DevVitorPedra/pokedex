@@ -30,6 +30,7 @@ function App() {
         </div>
         <div className="external-routes">
         <div className="routes">
+          <div>
           <div className="routes-selector">
          <span className="pokemons-selector"><i className="bi bi-caret-right-fill"></i></span> <Link to={'/pokemons-list'}><button className="btn"><i className="bi bi-list-ol"></i> Pokemons</button></Link>
           </div>
@@ -38,6 +39,7 @@ function App() {
           </div>
           <div className="routes-selector">
           <span className="types-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/types'}> <button className="btn"><i className="bi bi-x-diamond"></i> Types</button></Link>
+          </div>
           </div>
           <div className="description-text">
             <p>Welcome to my Pokedex.<br></br>
