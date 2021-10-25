@@ -20,9 +20,7 @@ export default function PokemonsList(props) {
         const url = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=600'
         const data = await fetch(url)
         const list = await data.json()
-      
         return setPokemons(list.results)
-      
     }
     useEffect(() => {
         const pokemonSelector = document.querySelector('.pokemons-selector')

@@ -39,17 +39,18 @@ function App() {
           <div className="routes-selector">
           <span className="types-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/type'}> <button className="btn"><i className="bi bi-x-diamond"></i> Types</button></Link>
           </div>
+          <div className="description-text">
+            <p>Welcome to my Pokedex.<br></br>
+            Choose one pokemon to see its stats<br></br>
+            If you like it, you can save in your favorites list.</p>
+            
+            </div>
           </div>
         </div>
          
 
       </div>
-      <div className="description-text">
-            <p>A list with all pokemons in the world. <br></br>
-            Choose one to see its stats<br></br>
-            If you like it, you can save in your favorites list.</p>
-            
-            </div>
+     
     </Router>
 
 
