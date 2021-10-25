@@ -2,25 +2,27 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+
 export default function PokemonsList(props) {
 
     useEffect(() => {
-        const description = document.querySelector('.description-text')
+       
         const pokemonSelector = document.querySelector('.pokemons-selector')
         pokemonSelector.classList.add('show')
-        description.innerHTML = `A List with all the pokemons in the world.
-    <br/>Choose one to see the stats`
-
+        
         getData()
     }, [])
     const [pokemons, setPokemons] = useState([])
     console.log(pokemons)
 
     const getData = async () => {
+        
         const url = 'https://pokeapi.co/api/v2/pokemon/?offset=0&limit=600'
         const data = await fetch(url)
         const list = await data.json()
+      
         return setPokemons(list.results)
+      
     }
     useEffect(() => {
         const pokemonSelector = document.querySelector('.pokemons-selector')
@@ -29,6 +31,7 @@ export default function PokemonsList(props) {
             pokemonSelector.classList.remove('show')
         }
     }, [])
+    
     return (
         <div className="pokedex">
             {pokemons.map((element, idx) => {

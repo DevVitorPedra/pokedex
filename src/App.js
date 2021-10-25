@@ -45,6 +45,9 @@ function App() {
 
       </div>
       <div className="description-text">
+            <p>A list with all pokemons in the world. <br></br>
+            Choose one to see its stats<br></br>
+            If you like it, you can save in your favorites list.</p>
             
             </div>
     </Router>

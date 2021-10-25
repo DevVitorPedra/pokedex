@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { retrieveClass } from '../../utils/classColor'
-const favoriteHeart = 0
-const favorites = localStorage.getItem('favorites') || []
+const favorites = JSON.parse(localStorage.getItem('favorites')) || []
+
+const heartFill = '<i class="bi bi-heart-fill"></i>'
+const heart ='<i class="bi bi-heart"></i>'
 export default function PokemonsList({ match }) {
+
     const [pokemon, setPokemon] = useState({})
+    const alreadyFav =favorites.findIndex((element)=>(element.name===pokemon.name))
     useEffect(() => {
         async function getPokemon() {
             const url = `https://pokeapi.co/api/v2/pokemon/${match.params.id}`
@@ -11,7 +15,8 @@ export default function PokemonsList({ match }) {
             const data = await fetchPokemon.json()
             console.log(data)
             setPokemon(
-                {
+                {   
+                    id:data.id,
                     name: data.name,
                     hp: data.stats[0].base_stat,
                     attack: data.stats[1].base_stat,
@@ -30,15 +35,28 @@ export default function PokemonsList({ match }) {
     }, [match.params.id])
 
     function handleFavorite(){
-       
+        const btnFav = document.querySelector('.favorites')
+        let savedPokemon=  favorites.findIndex((element)=>(element.name===pokemon.name))
+        console.log(pokemon)
+        console.log(favorites)
+        
+      if (savedPokemon>=0){
+          console.log(savedPokemon)
+            favorites.splice(savedPokemon,1)
+            localStorage.setItem('favorites',JSON.stringify(favorites))
+            btnFav.innerHTML = heart
+
+      }else {
+          console.log(savedPokemon)
+          favorites.push(pokemon)
+          localStorage.setItem('favorites',JSON.stringify(favorites))
+          btnFav.innerHTML = heartFill
+          
+      }
     
     }
 
     console.log(pokemon)
-    if (!pokemon) {
-        console.log('nothing')
-        return <p>Carregando info...</p>
-    }
 
     return (
 
@@ -47,7 +65,7 @@ export default function PokemonsList({ match }) {
                 <h1 className="pokemon-name">{pokemon?.name}</h1>
                
                 <img className="single-pokemon" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${match.params.id}.png`} alt={pokemon.name}></img>
-                 <button  className="favorites" onDoubleClick={handleFavorite}><i class="bi bi-heart"></i></button>
+                 <button  className="favorites" onClick={handleFavorite}>{(alreadyFav>=0) ? <i className="bi bi-heart-fill"></i> : <i className="bi bi-heart"></i> }</button>
             </div>
             <div className="pokemon-stats" style={{ 'backgroundColor': retrieveClass(pokemon.type1) }} >
                 <p><strong>Stats:</strong></p>
