@@ -27,10 +27,10 @@ function App() {
             <Route exact path={'/types'} component={Type} />
           </Switch>
 
-        </div>
+        </div >
         <div className="external-routes">
         <div className="routes">
-          <div>
+          <div className="routes-btns">
           <div className="routes-selector">
          <span className="pokemons-selector"><i className="bi bi-caret-right-fill"></i></span> <Link to={'/pokemons-list'}><button className="btn"><i className="bi bi-list-ol"></i> Pokemons</button></Link>
           </div>

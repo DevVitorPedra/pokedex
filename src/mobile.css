@@ -242,7 +242,7 @@ body{
         display: none;
     }
 .routes{
-   
+    padding: 0 10px;
     background-color: #FFCBA5;
     border-radius: 10px;
     border: 2vh solid #736163;
@@ -250,9 +250,10 @@ body{
     width: 95vw;
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 7vh;
-    padding-top: 3.5vh;
+    align-items: center;
+    justify-content: center;
+    gap: 4vh;
+    
     box-shadow: 0px 0px 10px 5px green;
 }
 .external-routes{
@@ -266,8 +267,8 @@ body{
         font-size: 12px;
         border-radius: 10px;
         border: 4px solid gray;
-        height: 100%;
-        width: 100%;
+        height: 90%;
+        width:100%;
         background-color: white;
         padding: 10px;
         overflow-y: scroll;
@@ -279,6 +280,14 @@ body{
         font-size: 6vh;
         color: darkslategrey;
 }
+.routes-btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
 .btn{
     background-color: #FFE3A5;
     text-align: start;
@@ -288,7 +297,8 @@ body{
     width: 25vw;
     height: 5vh;
     border: none;
-    padding-left: 5px;
+
+    
 }
 
 .intro{ 
