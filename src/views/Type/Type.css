@@ -1,0 +1,21 @@
+.by-types{
+    display: flex;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.btn-types{
+    height: 20px;
+}
+.types-screen{
+    height: 90vh;
+    padding:20px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}

@@ -5,6 +5,7 @@ const favorites = JSON.parse(localStorage.getItem('favorites')) || []
 const heartFill = '<i class="bi bi-heart-fill"></i>'
 const heart ='<i class="bi bi-heart"></i>'
 export default function PokemonsList({ match }) {
+    console.log("match",match)
 
     const [pokemon, setPokemon] = useState({})
     const alreadyFav =favorites.findIndex((element)=>(element.name===pokemon.name))
@@ -94,6 +95,7 @@ export default function PokemonsList({ match }) {
                 <p><strong>{pokemon.type2 ? 'Types:' : 'Type:'}</strong></p>
                 <div className="types">
                     <p>{pokemon.type1}</p>
+                   
                     {pokemon.type2 ? <p>{pokemon.type2}</p> : null}
 
                 </div>

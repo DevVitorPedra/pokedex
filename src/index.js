@@ -4,6 +4,7 @@ import App from './App';
 import './app.css'
 import '../src/views/PokemonsList/PokemonsList.css'
 import '../src/views/Pokemon/Pokemon.css'
+import "../src/views/Type/Type.css"
 
 
 ReactDOM.render(

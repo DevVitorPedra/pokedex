@@ -24,7 +24,7 @@ function App() {
             <Route excat path={'/pokemon/:id'} component={Pokemon}/>
             <Route exact path={'/favorites'} component={Favorites} />
             <Route exact path={'/pokemons-list'} component={PokemonsList} />
-            <Route exact path={'/type'} component={Type} />
+            <Route exact path={'/types'} component={Type} />
           </Switch>
 
         </div>
@@ -37,7 +37,7 @@ function App() {
           <span className="favorites-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/favorites'}><button className="btn"><i className="bi bi-heart"></i> Favorites</button></Link>
           </div>
           <div className="routes-selector">
-          <span className="types-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/type'}> <button className="btn"><i className="bi bi-x-diamond"></i> Types</button></Link>
+          <span className="types-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/types'}> <button className="btn"><i className="bi bi-x-diamond"></i> Types</button></Link>
           </div>
           <div className="description-text">
             <p>Welcome to my Pokedex.<br></br>
