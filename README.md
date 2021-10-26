@@ -62,5 +62,5 @@ Types, mostra a lista de pokemons separados por tipos, alguns pokemons possuem 2
 
 ```
 Com Objetivo educacional, a ideia era criar uma aplicação utilizando os conceitos de ReactJS,
-aprendidos  nas ultimas duas semanas do curso DEVinHouse!!
+aprendidos  nas ultimas duas semanas do curso DEVinHouse!!!
 ```
