@@ -15,7 +15,13 @@
     height: 20px;
     width: 90px;
     font-size: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 3px;
 }
+.btn-types:hover{
+    transform: scale(1.2);
+}
+
 .types-screen{
     height: 90vh;
     margin-left: 20px ;

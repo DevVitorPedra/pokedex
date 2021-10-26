@@ -4,6 +4,7 @@ import Favorites from './views/Favorites/Favorites';
 import Type from './views/Type/Type';
 import PokemonsList from './views/PokemonsList/PokemonsList';
 import Pokemon from './views/Pokemon/Pokemon';
+import Intro from './views/Intro/Intro';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
       <div className="main-menu">
         <div className="display">
           <Switch>
-            <Route exact path={'/'} ></Route>
+            <Route exact path={'/'} component={Intro} ></Route>
             <Route path={'/pokemon/:id'} component={Pokemon} />
             <Route path={'/favorites'} component={Favorites} />
             <Route path={'/pokemons-list'} component={PokemonsList} />
@@ -50,12 +51,14 @@ function App() {
                 If you like it, you can save in your favorites list.</p>
 
             </div>
+      
+
           </div>
+          
         </div>
 
 
       </div>
-
     </Router>
 
 
