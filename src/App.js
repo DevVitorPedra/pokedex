@@ -48,7 +48,8 @@ function App() {
             <div className="description-text">
               <p>Welcome to my Pokedex.<br></br>
                 Choose one pokemon to see its stats<br></br>
-                If you like it, you can save in your favorites list.</p>
+                If you like it, you can save in your favorites list.
+                You can also list them by type.</p>
 
             </div>
       
