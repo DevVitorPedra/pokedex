@@ -22,10 +22,10 @@ function App() {
         <div className="display">
           <Switch>
             <Route exact path={'/'} component={}></Route>
-            <Route exact path={'/pokemon/:id'} component={Pokemon}/>
-            <Route exact path={'/favorites'} component={Favorites} />
-            <Route exact path={'/pokemons-list'} component={PokemonsList} />
-            <Route exact path={'/types'} component={Type} />
+            <Route  path={'/pokemon/:id'} component={Pokemon}/>
+            <Route path={'/favorites'} component={Favorites} />
+            <Route path={'/pokemons-list'} component={PokemonsList} />
+            <Route path={'/types'} component={Type} />
           </Switch>
 
         </div >
