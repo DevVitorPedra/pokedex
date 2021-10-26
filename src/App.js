@@ -21,7 +21,7 @@ function App() {
       <div className="main-menu">
         <div className="display">
           <Switch>
-            <Route exact path={'/'} component={}></Route>
+            <Route exact path={'/'} component={App}></Route>
             <Route exact path={'/pokemon/:id'} component={Pokemon}/>
             <Route exact path={'/favorites'} component={Favorites} />
             <Route exact path={'/pokemons-list'} component={PokemonsList} />
