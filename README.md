@@ -4,8 +4,8 @@
 
 
 
-<img src="Captura de Tela (52).png" alt="Imagem da lista de pokemons">
-<img src="Captura de Tela (53).png" alt="Imagem da lista de Favoritos">
+<img src="./src/assets/images/Captura de Tela (51).png" alt="Imagem da lista de pokemons">
+<img src="Captura de Tela (52).png" alt="Imagem da lista de Favoritos">
 
 > Pokedex é uma aplicação de consulta a pokemons e seus stats dos jogos
 
