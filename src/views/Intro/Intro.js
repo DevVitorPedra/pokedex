@@ -7,7 +7,7 @@ export default function Intro() {
         <br></br>
         <hr></hr>
         <br></br>
-        <p>This application was developed with educational purpose!
+        <p>This application was developed for educational purpose!
         </p>
         <p>It is my first ReactJS application,</p>
         <p>the main idea was to create a pokedex based on the
