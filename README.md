@@ -33,7 +33,7 @@ Para usar:
 ```
 Na página principal temos três botões:
 Pokemons list, que mostra todos os pokemons baseado em seus ids de jogo, clicando em qualquer pokemon, se abrirá a página de stats
-permitindo também o pokemon seja salvo na sua lista de favoritos
+permitindo também que o pokemon seja salvo na sua lista de favoritos
 Favorites, mostra todos os seus pokemons salvos, na ordem que você adicionou
 Types, mostra a lista de pokemons separados por tipos, alguns pokemons possuem 2 tipos
 ```
@@ -61,5 +61,6 @@ Types, mostra a lista de pokemons separados por tipos, alguns pokemons possuem 2
 ## 🤝 Objetivo:
 
 ```
-Com Objetivo educacional, a ideia era criar uma aplicação utilizando os conceitos de ReactJS, aprendidos  nas ultimas duas semanas do curso DEVinHouse!!
+Com Objetivo educacional, a ideia era criar uma aplicação utilizando os conceitos de ReactJS,
+aprendidos  nas ultimas duas semanas do curso DEVinHouse!!
 ```
