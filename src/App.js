@@ -21,8 +21,8 @@ function App() {
       <div className="main-menu">
         <div className="display">
           <Switch>
-            <Route exact path={'/'} component={}></Route>
-            <Route  path={'/pokemon/:id'} component={Pokemon}/>
+            <Route exact path={'/'} ></Route>
+            <Route path={'/pokemon/:id'} component={Pokemon} />
             <Route path={'/favorites'} component={Favorites} />
             <Route path={'/pokemons-list'} component={PokemonsList} />
             <Route path={'/types'} component={Type} />
@@ -30,30 +30,30 @@ function App() {
 
         </div >
         <div className="external-routes">
-        <div className="routes">
-          <div className="routes-btns">
-          <div className="routes-selector">
-         <span className="pokemons-selector"><i className="bi bi-caret-right-fill"></i></span> <Link to={'/pokemons-list'}><button className="btn"><i className="bi bi-list-ol"></i> Pokemons</button></Link>
-          </div>
-          <div className="routes-selector">
-          <span className="favorites-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/favorites'}><button className="btn"><i className="bi bi-heart"></i> Favorites</button></Link>
-          </div>
-          <div className="routes-selector">
-          <span className="types-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/types'}> <button className="btn"><i className="bi bi-x-diamond"></i> Types</button></Link>
-          </div>
-          </div>
-          <div className="description-text">
-            <p>Welcome to my Pokedex.<br></br>
-            Choose one pokemon to see its stats<br></br>
-            If you like it, you can save in your favorites list.</p>
-            
+          <div className="routes">
+            <div className="routes-btns">
+              <div className="routes-selector">
+                <span className="pokemons-selector"><i className="bi bi-caret-right-fill"></i></span> <Link to={'/pokemons-list'}><button className="btn"><i className="bi bi-list-ol"></i> Pokemons</button></Link>
+              </div>
+              <div className="routes-selector">
+                <span className="favorites-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/favorites'}><button className="btn"><i className="bi bi-heart"></i> Favorites</button></Link>
+              </div>
+              <div className="routes-selector">
+                <span className="types-selector"><i className="bi bi-caret-right-fill"></i></span><Link to={'/types'}> <button className="btn"><i className="bi bi-x-diamond"></i> Types</button></Link>
+              </div>
+            </div>
+            <div className="description-text">
+              <p>Welcome to my Pokedex.<br></br>
+                Choose one pokemon to see its stats<br></br>
+                If you like it, you can save in your favorites list.</p>
+
             </div>
           </div>
         </div>
-         
+
 
       </div>
-     
+
     </Router>
 
 
