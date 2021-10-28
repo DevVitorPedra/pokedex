@@ -189,7 +189,7 @@ pokemonList css */
 }
 .card{
    
-   width: 100px;
+   width: 140px;
    padding: 10px;
    font-size: 8px;
    display: flex;
@@ -233,6 +233,7 @@ body{
     height: 60vh;
     width: 100vw;
     margin: .5%;
+    gap: 3vh;
     border-radius: 10px;
     padding: 3.5vh;
     border: 5px solid gray;
@@ -252,7 +253,7 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 4vh;
+    gap: 2vh;
     
     box-shadow: 0px 0px 10px 5px green;
 }
@@ -281,6 +282,7 @@ body{
         color: darkslategrey;
 }
 .routes-btns{
+        gap: 2vh;
     display: flex;
     flex-direction: column;
     justify-content: center;

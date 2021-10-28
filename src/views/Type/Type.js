@@ -2,9 +2,25 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { retrieveClass } from '../../utils/classColor'
-
-
-
+/**import bug from '../../assets/icons/bug.webp'
+import dark from '../../assets/icons/dark.webp'
+import dragon from '../../assets/icons/dragon.webp'
+import eletric from '../../assets/icons/electric.webp'
+import fairy from '../../assets/icons/fairy.webp'
+import fighting from '../../assets/icons/fighting.webp'
+import fire from '../../assets/icons/fire.png'
+import flying from '../../assets/icons/flying.webp'
+import ghost from '../../assets/icons/ghost.webp'
+import grass from '../../assets/icons/grass.webp'
+import ground from '../../assets/icons/ground.webp'
+import ice from '../../assets/icons/ice.webp'
+import normal from '../../assets/icons/normal.webp'
+import poison from '../../assets/icons/poison.png'
+import psychic from '../../assets/icons/psychic.webp'
+import rock from '../../assets/icons/rock.webp'
+import steel from '../../assets/icons/steel.webp'
+import water from '../../assets/icons/water.webp'
+ */
 
 export default function Type(props) {
   
@@ -43,7 +59,7 @@ export default function Type(props) {
                    const dataByType = await byType.json()
                    setPokemonsByType(dataByType.pokemon)
 
-               }}  style={{'backgroundColor':retrieveClass(element.name)}}>{element.name}</button>)
+               }}  style={{'backgroundColor':retrieveClass(element.name)}}>{element.name}<div className={element.name}></div></button>)
                })}
                
             
