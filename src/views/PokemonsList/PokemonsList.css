@@ -24,6 +24,16 @@
 .pokemon:hover{
     transform: scale(1.2);
 }
+.loading{
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/images/pokeballgif.webp');
+    background-position: center;
+    background-size: cover;
+
+
+}
 .card{
    
    width: 100px;

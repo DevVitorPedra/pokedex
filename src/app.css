@@ -19,7 +19,8 @@ body{
     justify-content: space-between;
 }
 .display{
-        background-color: #75CA88;
+       
+         background-color: #75CA88;
     height:100vh;
     width: 61vw;
     margin: .5%;
@@ -42,7 +43,7 @@ body{
     flex-direction: column;
     
     align-items: flex-start;
-    gap: 7vh;
+    gap: 4vh;
     padding-top: 3.5vh;
     box-shadow: 0px 0px 10px 5px green;
 }
@@ -52,6 +53,11 @@ body{
     border: 2vh solid #6BB231;
     border-radius: 20px;
     height: 100vh;
+}
+.routes-btns{
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
 }
 .description-text {
         border-radius: 10px;
