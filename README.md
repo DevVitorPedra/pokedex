@@ -1,7 +1,7 @@
 # {VSP}
 # Pokedex
 ## My Personal Pokedex
-
+<a href="https://vsp-pokedex.netlify.app" target="_blank">Acesse aqui</a>
 
 
 <img src="./src/assets/images/Captura de Tela (51).png" alt="Imagem da lista de pokemons">
